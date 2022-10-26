@@ -1,0 +1,105 @@
+.Profile-container{
+    margin: 1em;
+}
+.pic-name{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.pic-name img{
+    margin:auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+.pic-name span{
+    font-weight: bolder;
+}
+
+#slack{
+    display: none;
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    margin: auto auto 1em auto;
+}
+
+.butt{
+    color: black;
+    padding-top:10px;
+    text-decoration: none;
+    margin-bottom: 1em;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(208, 208, 208);
+}
+.butt:hover{
+    cursor: pointer;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes change{
+    0%{
+        background-color: aquamarine;
+    }
+    25%{
+        background-color: rgb(160, 255, 223);
+    }
+    50%{
+        background-color: hotpink;
+    }
+    75%{
+        background-color: rgb(160, 255, 223);
+    }
+    100%{
+        background-color: aquamarine;
+    }
+}
+
+.foot{
+    display: flex;
+    justify-content:space-around;
+}
+
+.foot p{
+    font-size:xx-large;
+    margin: 0;
+}
+.redDot{
+    color:rgb(255, 31, 31);
+    font-size: 40px;
+}
+.hng-write{
+    color:rgb(98, 98, 98);
+    font-size: large;
+    margin: auto 0;
+}
+
+@media only screen and (max-width:376px) {
+    #loogo{
+        display:none;
+    }
+    .pic-name{
+        margin-top:1em;
+    }
+    .btns{
+        width:100%;
+    }
+    .butt {
+        padding-top: 20px;
+        height: 40px;
+        width:100%;
+    }
+
+    .foot{
+        display:none;
+    }
+    
+}
